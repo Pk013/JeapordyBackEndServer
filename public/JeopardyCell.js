@@ -1,3 +1,4 @@
+
 class JeopardyCell extends Cell {
     constructor (rowIndex, columnIndex, rowParent) {
         super(rowIndex, columnIndex, rowParent)
@@ -19,11 +20,11 @@ class JeopardyCell extends Cell {
         this.showPointValue()
     }
 
-    showPointValue () {
+    PointValue () {
         this.cell.innerHTML = "$" + this.pointValue
     }
 
-    showQuestion () {
+   Question () {
         this.cell.innerHTML = this.question
     }
 }
